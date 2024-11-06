@@ -1,0 +1,149 @@
+ body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     margin: 0;
+     padding: 0;
+     background-color: #f0ebda;
+     /* Couleur de fond */
+ }
+
+ header {
+     background: #de8817d0;
+     color: #070707;
+     /* padding: 20px 0; */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     text-align: right;
+     /* Aligne le texte à droite */
+     padding: 15px 20px;
+     /* Ajoute un peu d'espace à droite */
+ }
+
+ header h1 {
+     margin: 0;
+     text-align: center;
+     flex: 1;
+    
+ }
+header ul {
+    color: #070707;
+    border-radius: 50px;
+    
+}
+ .job-highlight {  
+    text-align: center; /* Centre le texte */  
+    margin: 20px 20px; /* Espace autour du bloc */  
+}  
+
+.centered-title {  
+    display: inline-block; /* Assure que le titre occupe l'espace requis */  
+}  
+
+.descend {  
+    color: rgb(255, 0, 13);
+    display: block; /* Fait que le texte descende sur une nouvelle ligne */  
+    margin-top: 10px; /* Espace entre les lignes */  
+    font-weight: 50px; /* Modifie le style si besoin */  
+}
+
+ 
+.buttons {  
+    margin-top: 25px; /* Espace au-dessus des boutons */  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+}  
+
+.button {  
+    display: inline-block;  
+    padding: 20px 120px;  /* Ajustement de la taille du bouton */  
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);  
+    color: #333;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    margin: 6px;  
+    transition: background 0.3s, box-shadow 0.3s;  
+    font-weight: bold; 
+    font-size: 25px; 
+    box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.5),   
+                -5px -5px 10px rgba(255, 255, 255, 0.7);  
+}  
+
+.button:hover {  
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);  
+    box-shadow: 2px 2px 10px rgba(180, 180, 180, 0.5),   
+                -2px -2px 5px rgba(255, 255, 255, 0.7);  
+}  
+
+ nav {
+     text-align: right;
+ }
+
+ nav ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ nav ul li {
+     display: inline;
+     margin-right: 20px;
+ }
+
+ nav ul li a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: bold;
+ }
+
+ nav ul li a:hover {
+     text-decoration: underline;
+     /* Effet de survol */
+ }
+
+ .main-content {
+     padding: 20px;
+ }
+
+ footer {
+     background: #de8817d0;
+     color: #070707;
+     text-align: center;
+     padding: 5px 0;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+ }
+
+ @media (max-width: 600px) {
+     .hide-on-mobile {
+         display: none;
+         /* Cache l'élément */
+     }
+
+     header {
+         flex-direction: column;
+         /* Stack les éléments du header sur mobile */
+         text-align: center;
+         /* Centre le texte */
+     }
+
+     nav ul li {
+         display: block;
+         /* Permet un affichage vertical des liens de navigation */
+         margin: 10px 0;
+         /* Marge verticale */
+     }
+
+     .buttons {
+         flex-direction: column;
+         /* Les boutons deviennent verticaux sur mobile */
+     }
+
+     .button {
+        
+         width: 100%;
+         /* Les boutons prennent toute la largeur sur mobile */
+     }
+ }
